@@ -1,0 +1,187 @@
+.whyus {
+    margin: 8rem 0;
+    padding: 0 32px;
+
+    .-title {
+        width: 70%;
+        margin: 0 auto;
+        color: #121212;
+        text-align: center;
+
+        h1 {
+            font-family: Barlow;
+            font-size: clamp(36px, 6vw, 52px);
+            font-weight: 800;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: "Work Sans";
+            font-size: clamp(12px, 2vw + 8px, 20px);
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .-reasons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 8px;
+
+        .-box {
+            width: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            hr {
+                width: 80px;
+                height: 5px;
+                background-color: #DEC7A6;
+                margin-bottom: 16px;
+            }
+
+            .-icon svg {
+                width: 62px;
+                height: 62px;
+            }
+    
+            .-title {
+                margin-bottom: 8px;
+
+                color: #121212;
+                text-align: center;
+                font-family: Barlow;
+                font-size: clamp(20px, 24px, 28px);
+                font-weight: 800;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+            }
+    
+            .-desc {
+                color: #121212;
+                text-align: center;
+                font-family: "Work Sans";
+                font-size: clamp(16px, 18px, 20px);
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .-box {
+                width: 30%;
+            }
+        }
+    }
+
+    .-perfomances {
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .-perfomance {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .-icon svg {
+                width: 36px;
+                height: 36px;
+            }
+
+            .-title {
+                color: #121212;
+
+                text-align: center;
+                font-family: Barlow;
+                font-size: clamp(20px, 24px, 28px);
+                font-weight: 600;
+                letter-spacing: 1.2px;
+            }
+
+            .-ratings {
+                color: var(--Black, #121212);
+                font-family: Barlow;
+                font-size: clamp(88px, 92px, 96px);
+                font-weight: 700;
+            }
+
+            .-stars {
+                display: flex;
+                align-items: center;
+
+                gap: 8px;
+                margin-bottom: 16px;
+                
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    color: #F2C94C;
+                }
+            }
+
+            .-reviews {
+                font-family: "Work Sans";
+                font-size: clamp(20px, 24px, 28px);
+                font-weight: 400;
+            }
+
+
+            &.barber {
+                width: 100%;
+
+                .-avatar img {
+                    width: 107px;
+                    height: 107px;
+                    border-radius: 100px;
+
+                    object-fit: cover;
+                    margin-bottom: 24px;
+                }
+
+                .-title {
+                    margin-bottom: 12px;
+                }
+
+                .-desc {
+                    color: #121212;
+                    text-align: center;
+                    font-family: "Work Sans";
+                    font-size: clamp(12px, 2vw + 8px, 20px);
+                    font-weight: 400;
+                    line-height: 24px; 
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            justify-content: space-between;
+
+            
+            .-perfomance.barber {
+                width: 60%;
+            }
+
+            .-perfomance {
+                width: 20%;
+            }
+            
+        }
+
+    }
+    
+}

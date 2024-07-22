@@ -1,0 +1,39 @@
+.cta-btn {
+    display: inline-flex;
+    padding: 20px 30px;
+    align-items: flex-start;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    p {
+        text-align: center;
+        font-family: Barlow !important;;
+        font-size: clamp(16px, 18px, 24px) !important;
+        font-style: normal;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    &.primary {
+        background: #DEC7A6;
+        border: none;
+
+        p {
+            color: #121212;
+        }
+    }
+
+    &.secondary {
+        background: transparent;
+        border: 2px solid white;
+
+        p {
+            color: white
+        }
+    }
+}
+
+.cta-btn:hover {
+    transform: scale3d(1.05, 1.05, 1);
+}
